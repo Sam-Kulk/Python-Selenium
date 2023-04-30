@@ -1,0 +1,36 @@
+Basic Introduction
+--------------------
+Selenium is a tool that is basically used for automating web applications for functional testing purposes.
+Selenium is open source
+Selenium supports multiple languages like Python,Java,JavaScript etc..
+Selenium supports multiple browsers like Chrome,Firefox,Edge etc..
+Selenium supports multiple OSs like Windows,Linux,Mac
+
+There are 4 components/flavours of selenium
+--------------------------------------------
+1. Selenium IDE - Record & Replay tool.
+2. Selenium RC - Deprecated
+3. Selenium Webdriver - Developed to overcome the limitations of the Selenium RC.
+4. Selenium Grid - It is used for distributing the automation tests across different platforms & to run them parallely. This is basically used for automating the compatibility testing
+
+Selenium architecture
+----------------------
+3.X
+----                                                   JSON Wire Protocol                       W3C protocol
+Selenium Language Binding(Python +Selenium Webdriver) ----------------------> Browser Driver ----------------> Browser
+
+4.X
+----                         W3C protocol                           W3C protocol
+Selenium Language Binding ----------------------> Browser Driver ----------------> Browser
+
+Note:
+The browser driver will be the one that is going to perform the action on the web application running on the browser
+In the 4.X the data communication is better since the use of w3c protocol uniformly
+
+Things required for setting up the python-selenium automation
+--------------------------------------------------------------
+1. Python
+2. Pycharm IDE
+3. Browser driver
+4. Selenium Webdriver for Python i.e. Python Language Binding for Selenium Webdriver
+5. Web application
