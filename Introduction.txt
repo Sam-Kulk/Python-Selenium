@@ -32,5 +32,8 @@ Things required for setting up the python-selenium automation
 1. Python
 2. Pycharm IDE
 3. Browser driver
-4. Selenium Webdriver for Python i.e. Python Language Binding for Selenium Webdriver
+4. Selenium package for python
 5. Web application
+
+Note:
+Selenium Webdriver is a module in the Selenium package
