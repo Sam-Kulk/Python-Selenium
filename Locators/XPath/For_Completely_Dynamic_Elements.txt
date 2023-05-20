@@ -1,0 +1,59 @@
+XPath by Traversing
+=====================
+When the element has no proper attributes & text, then I need to use "XPath by traversing"
+
+The concept is basically like, here in such case I need to
+a. First find the XPath for any near static element.
+b. Then traverse from that static element to the dynamic element.
+
+There are two types of traversing
+=========================================
+1. Forward
+2. Backward
+3. Siblings traversing
+
+1. Forward
+---------------
+Navigating from self node to its child or descendant(child of the child) node
+a. I need to use '/' to navigate from self to child(immediate)
+b. I need to use '//' to navigate from self to descendant(any)
+
+Examples:
+a. //tr/th[contains(.,'Author')]
+b. //fieldset//input[@id='bmwradio']
+
+Note:
+1. /following::tag : To traverse from self node to any node that is coming after the self node in the dom structure
+Ex: //input[@id='disabled-button']/following::input
+
+2. Note: '::' scope function
+
+
+2. Backward
+-------------------
+Navigating from self node to its parent or ancestor(parent of parent) node
+a. I need to use '/..' to navigate from self to parent(immediate)
+b. I need to use '/ancestor::tag' to navigate from self to ancestor(any)
+
+Ex:
+a. //input[@id='bmwradio']/..
+b. //input[@id='disabled-button']/ancestor::div
+
+Note:
+/preceding::tag : To traverse from self node to any node that is coming before the self node in the dom structure
+Ex: //input[@id='disabled-button']/preceding::input
+
+
+3. Traversing to siblings
+--------------------------------
+a. traversing to following sibling
+------------------------------------
+Traversing from self node to its following siblings
+
+Ex: //input[@id='disabled-button']/following-sibling::input[@id='enabled-button']
+
+a. traversing to preceding sibling
+------------------------------------
+Traversing from self node to its preceding siblings
+
+Ex: //input[@id='enabled-button']/following-sibling::input[@id='disabled-button']

@@ -1,0 +1,23 @@
+I should use contains() & starts-with() to:
+1. Handel partially dynamic elements.
+2. To handel '&nbsp;'(non-breakable space) in the text.
+
+contains()
+--------------------
+Considering Success Popup as example:
+Ele1: Record Save Success
+Ele2: Record Save Successful.
+
+//*[contains(@id,'Record Save Success')] : This Xpath will work for both the elements
+
+starts-with()
+-------------------
+Considering the Start/Stop example
+
+//*[starts-with(@id,'St')]
+
+&nbsp;
+---------------
+Mysore&nbsp;&nbsp;&nbsp;Palace
+
+//*[contains(.,'Mysore')]

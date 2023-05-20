@@ -1,0 +1,49 @@
+LOCATORS
+=============
+Basically it is the address of the web element on the webpage.
+Locators are used to locate/identify the web element on the web page, to perform certain action on it.
+
+There are 8 types of locators
+1. ID
+2. Name
+3. Link Text
+4. Partial Link Text
+5. Tag Name
+6. class Name
+7. CSS Selector
+8. Xpath
+
+Note:
+1. ID,Name, Link Text & Partial Link Text locators are used to locate a single element.
+2. Tag Name & class Name locators are used to find multiple elements.
+3. CSS Selector & Xpaths locators allow the usage of other attributes including the ID & Name & also combination of them.
+4. Xpath is the most effective locator as it has lots of features i.e traversing, text() & grouping
+
+Basic html line
+-----------------
+<tag attribute1="value" attribute2="value" .....>text</tag>
+
+Tags of different web elements
+---------------------------------
+textfield  -->  input
+textarea field  -->  textarea
+checkbox  -->  input
+radiobutton  -->  input
+button --> button
+link --> a
+image --> img
+dropdown --> select
+table --> table
+
+Note:
+1. I can differentiate the textfield, checkbox & radio buttons by type attribute
+2. link will have mandatory attribute as "href" & img will have "src".
+
+
+XPath vs CSS Selector
+----------------------------
+Using CSS Selector I cannot handle dynamic elements, as text() & backward, forward traversing
+& traversing to siblings elements is not allowed in CSS Selector
+
+Note:
+CSS Selector can locate element only in one direction, Xpath can locate element in all direction.

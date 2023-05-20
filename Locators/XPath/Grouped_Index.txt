@@ -1,0 +1,12 @@
+If I am not to generate a proper XPath for the element by all different ways mentioned, then the last option is
+"Xpath by grouped index".
+
+It is suggested to use this way only after trying all the other ways.
+
+Syntax: (XPath)[index]
+
+Note: In Selenium indexing starts from '1'
+
+Ex1: (//input[@type='radio'])[2]
+Ex2: (//input[@type='radio'])[last()] : last() function for last index
+Ex3: (//input[@type='radio'])[last()-1]

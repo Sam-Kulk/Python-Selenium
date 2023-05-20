@@ -1,0 +1,25 @@
+1. XPath by attribute
+-------------------------
+When to use : when a proper attribute is present for the element to locate it uniquely
+
+//input[@id='bmwcheck']
+
+
+2. XPath by multiple attributes
+=================================================================
+When to use : when more than one attributes are required to locate element uniquely
+
+Considering two attributes are required to locate the element
+//input[@name='cars' and @value='bmw']
+
+Note:
+1. I can also make use of 'or' operator, but it is not the good practice, 'and' operator the one that is mostly used.
+2. Example for 'or' usage is Button Start/Stop
+
+3. XPaths by text()
+------------------------------
+When to use : when there are no proper attributes present for the element to locate it uniquely & the element has some text on it.
+
+//button[text()='Open Window'] or //button[.='Open Window']
+
+Note: . = text()

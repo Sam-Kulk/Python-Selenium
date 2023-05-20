@@ -1,0 +1,36 @@
+XPath
+-------------------------
+XPath - XML Path
+XPath is basically a type of locator that is actually the address/location of the web element on the HTML DOM of the web page.
+
+Note:
+1. DOM - Document Object Model
+2. XPath is the most preferred locator
+
+Types
+1. Absolute
+2. Relative
+
+Absolute vs Relative
+-----------------------
+1. The Absolute XPath starts from the root node/tag i.e. html and navigates till the element in the DOM
+whereas the Relative XPath does not starts from root tag instead it directly jumps on the element on the DOM.
+
+2. Absolute XPath expression starts with '/', whereas the Relative XPath expression starts with '//'.
+
+3. In Absolute XPath expression only tags & index are used, whereas in the Relative XPath expression the attributes are also used.
+
+4. The Absolute XPath expression will be usually very lengthy compared to the Relative XPath
+
+5. The Relative XPath is more stable/static, since in Abs XPath we use only tags & index i.e. hierarchy & this hierarchy will be affected whenever some changes are done in the webpage
+
+6. Relative XPath is relatively faster.
+
+Note:
+1. Relative XPath is preferred
+2. Selectors Hub is a browser extension/plugin that is used to generate, write & verify the XPaths
+
+Relative XPath
+----------------------------------------
+Syntax: //tag[@attribute='value']
+where '@' Indicates to  find element in all directions
