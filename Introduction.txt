@@ -37,3 +37,10 @@ Things required for setting up the python-selenium automation
 
 Note:
 Selenium Webdriver is a module in the Selenium package
+
+Limitations of Selenium
+--------------------------
+1. Selenium can automate web-application not any other types of applications.
+2. Does not have inbuilt reporting feature, it depends on third-party frameworks like TestNG
+Robot etc. for reporting.
+3. Cannot do Captcha validations.
