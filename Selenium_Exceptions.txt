@@ -6,7 +6,7 @@ This exception may come due to the following reason(s)
 a. Incorrect locator
 solution : Use proper locator
 
-b. Element may not be loaded yet on the page
+b. Element may not be loaded yet on the page(Ex :Popups)
 solution : use waits
 
 c. Element may be present in iframe
@@ -43,6 +43,8 @@ solution: Always copy the URL from browser
 
 Ex2: If you pass a null or empty value where it is not allowed, an InvalidArgumentException can be thrown.
 
+Ex3: If I pass the argument in invalid format like without quotes, something like that.
+
 
 6. StaleElementException
 -----------------------------------
@@ -52,7 +54,7 @@ This exception will raise when
 a. The page is reloaded/refreshed
 b. Page A -> Page B -> A
 
-If I reload/refresh the page, then the HTML DOM will be refreshed, so previously found element
+If I reload/refresh the page, then the HTML DOM will be rebuilt, so previously found element
 will be stale element for selenium webdriver, in that case this exception raises.
 
 Solution: Find the element again after refresh/reload.
