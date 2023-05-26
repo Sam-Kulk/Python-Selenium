@@ -1,0 +1,121 @@
+Selenium Exceptions
+=============================
+1. NoSuchElementException
+------------------------------------
+This exception may come due to the following reason(s)
+a. Incorrect locator
+solution : Use proper locator
+
+b. Element may not be loaded yet on the page
+solution : use waits
+
+c. Element may be present in iframe
+solution: Switch to iframe & perform action
+
+
+2. InvalidSelectorException
+----------------------------------
+This exception may come due to the following reason(s)
+If I am using XPath with invalid syntax
+sol: Use XPath will valid syntax
+
+
+3. SessionNotCreatedException
+-----------------------------------------
+The browser driver & browser version mismatch
+
+Solution: match the versions
+
+4. NoSuchSessionException
+-------------------------------
+When the browser session is closed & If I still try to run the selenium code
+
+Solution: Run all the selenium code before closing the browser.
+
+
+5. InvalidArgumentException
+----------------------------------
+The InvalidArgumentException in Selenium is typically thrown when an invalid argument(syntax wise)
+is passed to a method or function within the Selenium framework.
+
+Ex1: When I miss to specify the protocol i.e. http:// or https:// in the URL in get() or navigate().
+solution: Always copy the URL from browser
+
+Ex2: If you pass a null or empty value where it is not allowed, an InvalidArgumentException can be thrown.
+
+
+6. StaleElementException
+-----------------------------------
+Stale - Not fresh/new
+
+This exception will raise when
+a. The page is reloaded/refreshed
+b. Page A -> Page B -> A
+
+If I reload/refresh the page, then the HTML DOM will be refreshed, so previously found element
+will be stale element for selenium webdriver, in that case this exception raises.
+
+Solution: Find the element again after refresh/reload.
+
+
+7. ElementNotInteractableException
+-----------------------------------------------
+This exception may come due to the following reason(s)
+
+If I try to perform any action on the hidden element
+solution: Hidden element cannot be interacted, so try out some different locators for that
+element or make that element visible & then perform some action.
+
+
+8. InvalidElementStateException
+--------------------------------------
+This exception will come will I try to perform an invalid/unsupported action on the element
+in its current state.
+
+Ex1: Clicking on disabled button
+Ex2: Passing text onto button
+
+Solution: Perform valid action on the element.
+
+
+9. ElementClickInterceptedException
+--------------------------------------------------------------------------------
+This exception will occur when the element to be clicked in overlapped/hidden by some other
+element.
+
+Note: The element to clicked will be present in the DOM, as well as it will be visible in the
+webpage.
+
+Solution: Find a way to remove overlapping & then try to click.
+
+
+10. UnhandledAlertException
+---------------------------------
+This exception comes when I try to proceed with selenium code without handling(closing)
+the alert.
+
+Ex: Closing the browser without closing the alert.
+Solution: Whenever an alert popups up then first I need to handel it & then proceed.
+
+
+11. TimeoutException
+------------------------------
+This exception comes when timeout occurs for the timeout methods/functions used.
+Ex: pageLoadTimeout()
+Note: By default selenium webdriver will wait indefinitely for page to load
+
+
+12. NoSuchWindowException
+------------------------------
+This exception occurs when I try to switch to a window/tab which does not exist.
+
+
+13. NoAlertException
+-----------------------
+This exception occurs when I try to switch to alert, when page doesn't have the alert.
+Note: A page can have only one alert at a time.
+
+
+14. NoSuchFrameException
+----------------------------
+This exception occurs when I try to switch to a frame which does not exist.
