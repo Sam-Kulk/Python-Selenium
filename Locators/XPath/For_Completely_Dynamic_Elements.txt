@@ -57,3 +57,7 @@ a. traversing to preceding sibling
 Traversing from self node to its preceding siblings
 
 Ex: //input[@id='enabled-button']/following-sibling::input[@id='disabled-button']
+
+
+Note:
+In all backward direction traversing, again the indexing starts from top
