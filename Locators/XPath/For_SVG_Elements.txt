@@ -1,0 +1,19 @@
+The svg tag is basically used for the icons on the web page.
+The svg tag is not supported in the XPath syntax.
+
+The right way for writing XPath for svg elements is:
+//*[local-name()='svg']
+This local-name() is a function.
+
+Note:
+1. I can make use of attributes & indexing
+Ex1: //*[local-name()='svg' and @data-icon='home']
+Ex2: (//*[local-name()='svg'])[2]
+
+2. Generally the path element will be the child element of the svg element, if I want Xpath
+for that path element then the best approach is:
+(//*[local-name()='svg'])[2]/*[local-name()='path'], because the path tag is also not supported
+in Xpath syntax & also 'path' element will not have any proper attributes.
+
+3. It is always not preferred to use XPath for the svg/path elements, it is better to make use of
+any of its proper parent elements.
