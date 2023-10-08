@@ -1,0 +1,18 @@
+close() v/s quit()
+======================
+- close() should be used to close current tab, when multiple tabs of browser are opened & quit() should be used to close entire browser, along with all it's tabs & it will kill the browser process running internally
+- close() should not be used to close the browser, when single tab is opened, because it will not kill the browser process internally.
+- quit() should be used.
+
+find_element() v/s find_elements()
+=====================================
+- f_es() will returns the element objects all the elements(one or many) which are matching the specified locator as a list, whereas the f_e() will return element object of only one/first matching element even though multiple elements are matching with the locator.
+- f_es() will return empty list if no elements match the specified locator, whereas the f_e() will throw 'NoSuchElement' exception.
+
+os module
+===================
+It is a built-in module
+It is having a function to get current working directory, which can used in specifying paths
+Ex : os.getcwd()+"rest_of _the_loc"
+
+- I can interact with database with the selenium-webdriver by importing the relavant package. For reference I can refer SDET Selenium-Python session 15.

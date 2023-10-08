@@ -1,0 +1,6 @@
+- ActionChains() class methods are used to perform mouse actions, it's instance is used.
+- Keys class/module functions are used to perform keyboard actions, it is used with send_keys()
+- send_keys() is used for file upload, it is used as find_element().send_keys(file_location)
+- driver.save_screenshot(file_loc) to save screenshot
+- driver.switch_to_new_window('tab' or 'window') to open new tab or new browser window.
+- to interact with the Excel using Selenium-Webdriver an external package called 'openpyxl' is used.
