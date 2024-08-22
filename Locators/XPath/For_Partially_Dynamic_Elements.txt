@@ -10,14 +10,20 @@ Ele2: Record Save Successful.
 
 //*[contains(@id,'Record Save Success')] : This Xpath will work for both the elements
 
+    Note : I can use this with text() as well
+        //button[contains(.,'Open')]
+
 starts-with()
 -------------------
 Considering the Start/Stop example
 
 //*[starts-with(@id,'St')]
+Note : I can use this with text() as well
+        //button[starts-with(.,'Open')]
 
 &nbsp;
 ---------------
 Mysore&nbsp;&nbsp;&nbsp;Palace
 
 //*[contains(.,'Mysore')]
+Note : the text nbsp; cannot be used in value

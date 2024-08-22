@@ -21,7 +21,8 @@ Selenium Language Binding(Python +Selenium Webdriver) ----------------------> Br
 
 4.X
 ----                         W3C protocol                           W3C protocol
-Selenium Language Binding ----------------------> Browser Driver ----------------> Browser
+Selenium Language Binding ----------------------> Browser Driver ----------------> Browser/ Application running on the browser.
+(Selenium Webdriver+ Programming langauge)
 
 Note:
 The browser driver will be the one that is going to perform the action on the web application running on the browser
@@ -33,7 +34,8 @@ Things required for setting up the python-selenium automation
 2. Pycharm IDE
 3. Browser driver
 4. Selenium package for python
-5. Web application
+5. Browser
+6. Web application
 
 Note:
 Selenium Webdriver is a module in the Selenium package

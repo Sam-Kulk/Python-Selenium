@@ -2,7 +2,7 @@
 # ======================
 # Synchronization is a technique to sync the selenium execution speed & web page loading speed i.e. managing the mismatch in speeds.
 # These techniques deal with managing the selenium execution speed not the application speed to tackle the issue.
-# The problem raises mainly while navigating from one page to another page, pop-us etc...
+# The problem raises mainly while navigating from one page to another page, pop-us & alerts etc...
 # The following are the synchronization techniques i.e. sleep(), implicitly_wait() & explicitly_wait()
 # all time specified is by default in seconds
 # find_element() & implicitly_wait() are wrt dom & explicitly_wait() can check of visibility on the element on webpage

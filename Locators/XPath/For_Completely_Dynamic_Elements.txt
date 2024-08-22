@@ -24,7 +24,7 @@ b. //fieldset//input[@id='bmwradio']
 
 Note:
 1. /following::tag : To traverse from self node to any node that is coming after the self node in the dom structure
-Ex: //input[@id='disabled-button']/following::input
+    Ex: //input[@id='disabled-button']/following::input
 
 2. Note: '::' scope function
 
@@ -37,11 +37,11 @@ b. I need to use '/ancestor::tag' to navigate from self to ancestor(any)
 
 Ex:
 a. //input[@id='bmwradio']/..
-b. //input[@id='disabled-button']/ancestor::div
+b. //input[@id='disabled-button']/ancestor::div   -- only preceding parents
 
 Note:
 /preceding::tag : To traverse from self node to any node that is coming before the self node in the dom structure
-Ex: //input[@id='disabled-button']/preceding::input
+Ex: //input[@id='disabled-button']/preceding::input  - all previosus elements including siblings.
 
 
 3. Traversing to siblings

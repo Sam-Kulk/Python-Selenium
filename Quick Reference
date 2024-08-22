@@ -4,3 +4,11 @@
 - driver.save_screenshot(file_loc) to save screenshot
 - driver.switch_to_new_window('tab' or 'window') to open new tab or new browser window.
 - to interact with the Excel using Selenium-Webdriver an external package called 'openpyxl' is used.
+
+
+
+
+- selenium is a package and in that webdriver is a module
+- For browser related actions
+driver = webdriver.Chrome()
+driver.functions(......................)/properties like get(), max(), close(), quit(), refresh(), window_handles, switch_to.window() etc..

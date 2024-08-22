@@ -1,9 +1,10 @@
 1. XPath by attribute
 -------------------------
-When to use : when a proper attribute is present for the element to locate it uniquely
+When to use : when a proper attribute is present for the element to locate it uniquely, like id & name.
 
 //input[@id='bmwcheck']
 
+Note: attribute value will be case sensitive
 
 2. XPath by multiple attributes
 =================================================================
@@ -18,8 +19,11 @@ Note:
 
 3. XPaths by text()
 ------------------------------
-When to use : when there are no proper attributes present for the element to locate it uniquely & the element has some text on it.
+When to use : when there are no proper attributes present for the element to locate it uniquely & the element has some text on it with which it can be identifyied uniquely.
 
 //button[text()='Open Window'] or //button[.='Open Window']
 
-Note: . = text()
+Note:
+- . = text()
+- text will be case sensitive.
+

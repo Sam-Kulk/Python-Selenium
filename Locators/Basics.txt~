@@ -23,7 +23,7 @@ Basic html line
 -----------------
 <tag attribute1="value" attribute2="value" .....>text</tag>
 
-Tags of different web elements
+    Tags of different web elements
     ---------------------------------
     textfield  -->  input
     textarea field  -->  textarea

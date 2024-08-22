@@ -27,7 +27,7 @@ whereas the Relative XPath does not starts from root tag instead it directly jum
 6. Relative XPath is relatively faster.
 
 Note:
-1. Relative XPath is preferred
+1. Relative XPath is preferred because it is faster, shorter & more stable/static.
 2. Selectors Hub is a browser extension/plugin that is used to generate, write & verify the XPaths
 
 Relative XPath
